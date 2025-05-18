@@ -221,3 +221,34 @@ body {
     padding: 60px 0;
   }
 }
+
+/* Hack Club Animation */
+#hackclub-box {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.7); z-index: 10000;
+  transition: opacity 1s;
+}
+
+#hackclub-type {
+  color: #00ff00;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 2.5rem;
+  background: #080808;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  margin: 0;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+header {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+header.hc-reveal {
+  opacity: 1 !important;
+}
