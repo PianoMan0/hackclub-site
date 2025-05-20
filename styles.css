@@ -252,3 +252,34 @@ header {
 header.hc-reveal {
   opacity: 1 !important;
 }
+
+.full-image-section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-image-section .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.full-image-section .overlay-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  background: rgba(0,0,0,0.4); /* Optional: dark overlay for contrast */
+  padding: 2rem 0;
+}
